@@ -8,7 +8,7 @@ body {
 
 .Card {
     background: white;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 50px 100px;
     max-width: 500px;
     display: flex;
@@ -37,4 +37,10 @@ body {
 
 .Card__Content {
     width: 50%;
+}
+
+.Card__Content h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
 }
