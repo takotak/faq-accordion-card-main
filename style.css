@@ -28,8 +28,8 @@ body {
 }
 .box-illustration {
     position:absolute;
-    right:410px;
-    bottom:100px;
+    right:350px;
+    bottom:50px;
     display:inline-flex;
     z-index:1
 }
@@ -66,7 +66,6 @@ body {
 .Accordion__Item {
     border-bottom: 1px solid hsl(240, 5%, 91%);
     list-style-type: none;
-    padding-bottom: 20px;
 }
 .Accordion__Item__Button {
     display: flex;
@@ -79,12 +78,20 @@ body {
     cursor: pointer;
 }
 .Accordion__Item__Button p {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 20px 0;
+}
+.Accordion__Item__Content {
+    height: 0;
+    overflow: hidden;
+    transition: height ease;
 }
 .Accordion__Item__Content p {
     font-size: 14px;
     font-weight: 400;
     color: hsl(240, 6%, 50%);
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .Accordion__Item.open {
@@ -95,4 +102,8 @@ body {
 }
 .Accordion__Item.open .Accordion__Item__Button img {
     transform: rotate(180deg);
+}
+.Accordion__Item.open .Accordion__Item__Content {
+    display: block;
+    height: fit-content;
 }

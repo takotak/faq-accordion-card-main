@@ -10,11 +10,11 @@
 <body>
     <div class="Card">
         <div class="Card__Picture">
-            <img
+            <div class="woman-illustration" style='position: relative;'>
+                <img
                 class="box-illustration"
                 src="./images/illustration-box-desktop.svg"
                 alt="illustration box">
-            <div class="woman-illustration" style='position: relative;'>
             </div>
         </div>
         <div class="Card__Content">
@@ -80,5 +80,18 @@
             </ul>
         </div>
     </div>
+
+    <script type="text/javascript">
+        console.log("ok")
+        function toggleOpening(e){
+            document.querySelectorAll('.Accordion__Item').forEach(item => {
+                item.classList.remove('open')
+            })
+            e.currentTarget.parentElement.classList.toggle('open')
+        }
+        document.querySelectorAll('.Accordion__Item__Button').forEach( item => {
+            item.addEventListener("click", e => toggleOpening(e))
+        })
+    </script>
 </body>
 </html>
