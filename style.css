@@ -95,6 +95,21 @@ body {
     font-weight: 700;
     margin-top: 0;
 }
+@media screen and (max-width: 1000px){
+    .Card__Content {
+        padding-top: 125px;
+        width: inherit;
+        align-items: center;
+    }
+    .Card__Content__Header {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .Card__Content {
+        padding: 125px 20px 50px;
+    }
+}
 
 .Accordion {
     padding-left: 0;
